@@ -235,9 +235,51 @@ h2 {
     max-height: 25px;
 }
 
+.footer svg {
+    max-height: 25px;
+}
+
+.footer a {
+    color: #0B1D26;
+}
+
+.footer svg .cls-1 {
+    fill: #d4d4d4;
+}
+
+.footer a:hover svg .cls-1{
+    fill: #F9FBFD;
+}
+
+.footer svg .cls-2 {
+    fill: #d4d4d4;
+}
+
+.footer a:hover svg .cls-2{
+    fill: #F9FBFD;
+}
+
 .footer p {
     font-size: 1rem;
+    color: #d4d4d4;
 }
+
+.card-layanan svg .cls-2{
+    fill: #0B1D26;
+}
+
+.card-layanan svg {
+    max-height: 5rem;
+}
+
+.card-layanan svg {
+    color: #F9FBFD;
+}
+
+.hero svg {
+}
+
+
 
 
 
@@ -306,6 +348,18 @@ h2 {
 
 .spacevh-contact {
     min-height: 27vh;
+}
+
+.card-socmed svg .cls-1{
+    fill: #0B1D26;
+}
+
+.card-socmed svg .cls-2{
+    fill: #0B1D26;
+}
+
+.card-socmed svg {
+    max-height: 4rem;
 }
 
 
