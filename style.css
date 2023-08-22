@@ -23,7 +23,9 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
+    /*
     min-height: 100%;
+    */
     background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
 }
 
@@ -75,6 +77,10 @@ body::before {
 
 .navbar-top button {
     border: none;
+}
+
+.navbar-top button:focus {
+    box-shadow: none;
 }
 
 
@@ -129,8 +135,8 @@ body::before {
     -moz-border-radius: 0.25rem;
     -ms-border-radius: 0.25rem;
     -o-border-radius: 0.25rem;
+    
     color: var(--light);
-
 }
 
 .card-arjuna .card-body:hover {
@@ -189,6 +195,7 @@ body::before {
 .hero svg {
     width: 100%;
 }
+
 
 .hero .row {
     width: 100%;
@@ -356,6 +363,12 @@ body::before {
     html {
         font-size: 75%;
     }
+
+    /*
+    .card-arjuna .card-body img {
+        width: 0px;
+    }
+    */
 }
 
 
@@ -380,6 +393,12 @@ body::before {
     .hero h1 {
         font-size: 4rem;
     }
+
+    /*
+    .hero svg {
+        width: 0;
+    }
+    */
 
     /*Card Layanan*/
     .card-layanan{
