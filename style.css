@@ -54,12 +54,9 @@ body::before {
 
 /*TNavbar Top - Margin Top*/
 .navbar-top {
-    -webkit-border-radius: 0 0 1rem 1rem;
-    -moz-border-radius: 0 0 1rem 1rem;
-    -ms-border-radius: 0 0 1rem 1rem;
-    -o-border-radius: 0 0 1rem 1rem;
-    background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
     padding: 1rem;
+
+    background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
 }
 
 .navbar-top .navbar-brand {
@@ -101,6 +98,10 @@ body::before {
     font-size: 7rem;
 }
 
+.hero p a {
+    color: var(--primary) !important;
+}
+
 .btn-primary {
     background-color: var(--primary);
     border: none;
@@ -118,15 +119,18 @@ body::before {
 
 .card-arjuna .card-body {
     background-color: rgba(247, 249, 251, 0.25);
+
     border-width: 0.1rem !important;
     border-radius: 0.25rem;
     border: solid;
+
     border-color: var(--light);
-    color: var(--light);
     -webkit-border-radius: 0.25rem;
     -moz-border-radius: 0.25rem;
     -ms-border-radius: 0.25rem;
     -o-border-radius: 0.25rem;
+    color: var(--light);
+
 }
 
 .card-arjuna .card-body:hover {
@@ -239,7 +243,7 @@ body::before {
 }
 
 
-/*Card Motor*/
+/*Card Motor (+Property+ Homestay & Kos)*/
 .card-motor {
     margin-top: 4rem;
 }
@@ -270,15 +274,28 @@ body::before {
 
 .card-motor h5 {
     font-weight: bold;
-    font-size: large;
+    font-size: medium;
+    margin-top: 1rem;
 }
 
 .card-motor p {
-    font-size: medium;
+    font-size: large;
 }
 
 .card-motor .btn-primary {
     max-width: 15rem;
+}
+
+.card-motor .list-group .list-group-item {
+    border-color: var(--light-sub);
+    color: var(--light);
+    font-weight: 200;
+    font-size: medium;
+    text-align: center;
+}
+
+.card-motor .text-center a {
+    color: var(--primary) !important;
 }
 
 
@@ -358,10 +375,15 @@ body::before {
 
     /*Hero Page*/
     .hero {
-        height: 45vh;
+        height: 35vh;
     }
     .hero h1 {
         font-size: 4rem;
+    }
+
+    /*Card Layanan*/
+    .card-layanan{
+        margin-top: 10rem;
     }
 
     /*Card Arjuna*/
