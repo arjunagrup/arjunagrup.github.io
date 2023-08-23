@@ -46,13 +46,11 @@ body::before {
     z-index: -1;
 }
 
-
 /*Body Sub - Margin*/
 .body-sub {
     margin-left: 6rem !important;
     margin-right: 6rem !important;
 }
-
 
 /*TNavbar Top - Margin Top*/
 .navbar-top {
@@ -87,9 +85,7 @@ body::before {
 /*Hero Page*/
 .hero {
     margin-top: 10vh;
-    height: 50vh;
-    margin-bottom: 10vh;
-
+    height: 60vh;
 
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
@@ -98,13 +94,7 @@ body::before {
     -o-border-radius: 1rem;
 }
 
-.hero-property {
-    background-image: url("/img/defier-nguyen-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-.hero h1, p {
+.hero h1, .hero p {
     text-shadow: 2px 2px 5px #212529;
 }
 
@@ -130,15 +120,19 @@ body::before {
 */
 
 .hero main {
+    /*
     padding-top: 10vh;
+    */
 }
 
 .hero h1 {
     font-family: 'Righteous', cursive;
     font-size: 7rem;
+    margin-top: -2rem;
 }
 
 .hero p a {
+    font-weight: bold;
     color: var(--primary) !important;
 }
 
@@ -154,7 +148,7 @@ body::before {
 
 /*Couple Card Arjuna*/
 .card-arjuna {
-    margin-bottom: 10vh;
+    margin-top: 2rem;
 }
 
 .card-arjuna .card-body {
@@ -184,6 +178,7 @@ body::before {
 
 .card-arjuna .card-body h2 {
     font-weight: bold;
+    font-family: 'Righteous', cursive;
 }
 
 .card-arjuna .card-body p {
@@ -230,15 +225,13 @@ body::before {
     width: 100%;
 }
 
-
 .hero .row {
     width: 100%;
 }
 
-
 /*Card Layanan*/
 .card-layanan{
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .card-layanan .card {
@@ -364,9 +357,29 @@ body::before {
 
 /*Footer*/
 .footer {
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
+
+
+/*-----------------Import Background-----------------*/
+.hero-home {
+    background-image: url("/img/nastuh-abootalebi-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-rent {
+    background-image: url("/img/christopher-burns-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-property {
+    background-image: url("/img/defier-nguyen-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
 
 
 
@@ -436,12 +449,12 @@ body::before {
 
     /*Card Layanan*/
     .card-layanan{
-        margin-top: 10rem;
+        margin-top: 5rem;
     }
 
     /*Card Arjuna*/
     .card-arjuna {
+        margin-top: 5rem;
         margin-bottom: 10vh;
     }
 }
-
