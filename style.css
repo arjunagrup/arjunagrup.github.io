@@ -41,7 +41,7 @@ body::before {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-image: url("/img/henry-unsplash.jpg");
+    background-image: url("/img/");
     background-size: cover;
     z-index: -1;
 }
@@ -86,20 +86,19 @@ body::before {
 .hero {
     margin-top: 10vh;
     height: 60vh;
-
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
 }
 
 .hero h1, .hero p {
-    text-shadow: 2px 2px 5px #212529;
+    text-shadow: 2px 2px 10px #212529;
 }
 
 .hero .btn {
-    box-shadow: 2px 2px 5px #212529;
+    box-shadow: 2px 2px 10px #212529;
 }
 
 /*
@@ -125,6 +124,13 @@ body::before {
     */
 }
 
+.hero .card-transparant {
+    border: none;
+    height: 60vh;
+    top: 0;
+    padding-top: 15vh;
+}
+
 .hero h1 {
     font-family: 'Righteous', cursive;
     font-size: 7rem;
@@ -148,16 +154,11 @@ body::before {
 
 /*Couple Card Arjuna*/
 .card-arjuna {
-    margin-top: 2rem;
+    margin-top: -7vh;
+    margin-bottom: 5rem;
 }
 
 .card-arjuna .card-body {
-    background-color: rgba(247, 249, 251, 0.25);
-
-    border-width: 0.1rem !important;
-    border-radius: 0.25rem;
-    border: solid;
-
     border-color: var(--light);
     -webkit-border-radius: 0.25rem;
     -moz-border-radius: 0.25rem;
@@ -167,9 +168,37 @@ body::before {
     color: var(--light);
 }
 
-.card-arjuna .card-body:hover {
-    background-color: var(--light);
-    color: var(--dark);
+.card-sub-left {
+    background-image: url("/img/christopher-burns-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+
+    padding: 0;
+}
+
+.card-sub-right {
+    background-image: url("/img/defier-nguyen-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+
+    padding: 0;
+}
+
+.card-transparant {
+    background-color: rgba(33, 37, 41, 0.5);
+
+    border-width: 0.1rem !important;
+    border-radius: 0.25rem;
+    border: solid;
+}
+
+.card-arjuna .card-transparant:hover {
+    background-color: rgba(247, 249, 251, 0);
+    color: rgba(247, 249, 251, 0);
+}
+
+.card-arjuna .card-transparant:hover h2 {
+    color: rgba(247, 249, 251, 0);
 }
 
 .card-arjuna .card-body img {
@@ -178,11 +207,12 @@ body::before {
 
 .card-arjuna .card-body h2 {
     font-weight: bold;
+    color: var(--primary);
     font-family: 'Righteous', cursive;
 }
 
 .card-arjuna .card-body p {
-    font-weight: 200;
+    font-weight: normal;
 }
 
 
@@ -397,8 +427,21 @@ body::before {
     }
 
     /*Hero Page*/
+    .hero {
+        height: 35vh;
+    }
     .hero h1 {
         font-size: 6rem;
+    }
+    .hero .card-transparant {
+        height: 35vh;
+        padding-top: 10vh;
+    }
+
+    /*Card Arjuna*/
+    .card-arjuna {
+        margin-top: 5rem;
+        margin-bottom: 0rem;
     }
 }
 
@@ -406,7 +449,6 @@ body::before {
 
 /* tablet */
 @media (max-width: 768px) {
-
     html {
         font-size: 75%;
     }
@@ -426,19 +468,29 @@ body::before {
         font-size: 75%;
     }
 
+    .body-sub {
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+    }
+
     /*Navbar Top*/
     .navbar-top .container {
         margin-top: 0.5rem;
-        margin-left: 3rem;
-        margin-right: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     /*Hero Page*/
     .hero {
         height: 35vh;
+        margin-bottom: 5rem;
     }
     .hero h1 {
         font-size: 4rem;
+    }
+    .hero .card-transparant {
+        height: 35vh;
+        padding-top: 10vh;
     }
 
     /*
@@ -455,6 +507,40 @@ body::before {
     /*Card Arjuna*/
     .card-arjuna {
         margin-top: 5rem;
-        margin-bottom: 10vh;
+        margin-bottom: 0rem;
     }
+
+    /*Card Motor*/
+    .card-motor .row {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+
+
+/*Scroll Animation to Javascript*/
+.elemen {
+    position: relative !important;
+    transform: translateY(50px) !important;
+    -webkit-transform: translateY(50px) !important;
+    -moz-transform: translateY(50px) !important;
+    -ms-transform: translateY(50px) !important;
+    -o-transform: translateY(50px) !important;
+    opacity: 0 !important;
+    transition: all 0.7s ease !important;
+    -webkit-transition: all 0.7s ease !important;
+    -moz-transition: all 0.7s ease !important;
+    -ms-transition: all 0.7s ease !important;
+    -o-transition: all 0.7s ease !important;
+}
+
+.tampil {
+    position: relative !important;
+    transform: translateY(0px) !important;
+    -webkit-transform: translateY(0px) !important;
+    -moz-transform: translateY(0px) !important;
+    -ms-transform: translateY(0px) !important;
+    -o-transform: translateY(0px) !important;
+    opacity: 1 !important;
 }
