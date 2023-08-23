@@ -247,6 +247,10 @@ body::before {
     color: var(--light-sub);
 }
 
+.footer a {
+    color: var(--dark);
+}
+
 
 
 /*--------------------------Rent--------------------------*/
