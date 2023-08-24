@@ -14,6 +14,7 @@
     --secondary: #283F4D;
     --tritary: #186C52;
     --tritary-sub: #54AD4F;
+    --four: #e63946;
 }
 
 
@@ -85,7 +86,7 @@ body::before {
 /*Hero Page*/
 .hero {
     margin-top: 10vh;
-    height: 60vh;
+    height: 55;
     border-radius: 0.5rem;
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
@@ -126,7 +127,7 @@ body::before {
 
 .hero .card-transparant {
     border: none;
-    height: 60vh;
+    height: 55vh;
     top: 0;
     padding-top: 15vh;
 }
@@ -314,6 +315,18 @@ body::before {
 /*Card Motor (+Property+ Homestay & Kos)*/
 .card-motor {
     margin-top: 4rem;
+
+    /*
+    padding: 2rem 1rem 2rem 1rem;
+
+    background-color: var(--light-sub);
+
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    */
 }
 
 .card-motor .card {
@@ -417,6 +430,69 @@ body::before {
 
 
 
+/*-----------------------Contact-----------------------*/
+.card-socmed {
+    margin-top: 25vh;
+    margin-bottom: 20vh;
+    padding: 0;
+}
+
+.card-socmed h5 {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.card-socmed .card-body {
+    margin: 0;
+}
+
+.card-socmed a {
+    text-decoration: none;
+}
+
+.card-socmed .card-body {
+    background-color: rgba(247, 249, 251, 0.25);
+    padding-bottom: 0;
+}
+
+.card-socmed .whatsapp .card-body:hover {
+    background-color: var(--tritary);
+}
+
+.card-socmed .location .card-body:hover {
+    background-color: var(--secondary);
+}
+
+.card-socmed .instagram .card-body:hover {
+    background-color: var(--four);
+}
+
+
+
+/*---------------------Privacy Policy---------------------*/
+.card-privacy-policy {
+    margin-top: 20vh;
+}
+
+.card-privacy-policy {
+    background-color: rgba(247, 249, 251, 0.25);
+
+    padding: 2rem;
+
+    border-width: 0.1rem !important;
+    border-radius: 0.25rem;
+    border: solid;
+    border-color: var(--light);
+}
+
+.card-privacy-policy p {
+    margin-bottom: 0;
+}
+
+
+
+
+
 /*======================Media Query======================*/
 /* laptop */
 @media (max-width: 992px) {
@@ -455,6 +531,13 @@ body::before {
 @media (max-width: 768px) {
     html {
         font-size: 75%;
+    }
+
+
+    /*Hero*/
+    .hero .card-transparant {
+        height: 35vh;
+        padding-top: 5vh;
     }
 
     /*
@@ -519,6 +602,17 @@ body::before {
         padding-left: 4rem;
         padding-right: 4rem;
     }
+
+    /*Card Socmed*/
+    .card-socmed {
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+
+    /*Card Privacy Policy*/
+    .card-privacy-policy {
+        margin-top: 15vh;
+    }
 }
 
 
@@ -537,6 +631,21 @@ body::before {
     -moz-transition: all 0.7s ease !important;
     -ms-transition: all 0.7s ease !important;
     -o-transition: all 0.7s ease !important;
+}
+
+.elemen2 {
+    position: relative !important;
+    transform: translateY(50px) !important;
+    -webkit-transform: translateY(50px) !important;
+    -moz-transform: translateY(50px) !important;
+    -ms-transform: translateY(50px) !important;
+    -o-transform: translateY(50px) !important;
+    opacity: 0 !important;
+    transition: all 1.7s ease !important;
+    -webkit-transition: all 1.7s ease !important;
+    -moz-transition: all 1.7s ease !important;
+    -ms-transition: all 1.7s ease !important;
+    -o-transition: all 1.7s ease !important;
 }
 
 .tampil {
