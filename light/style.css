@@ -12,9 +12,11 @@
     --primary: #FD9300;
     --primary-sub: #FFC000;
     --secondary: #283F4D;
+    --secondary-sub: #466f88;
     --tritary: #186C52;
     --tritary-sub: #54AD4F;
     --four: #e63946;
+    --four-sub: #e9515d;
 }
 
 
@@ -465,20 +467,20 @@ body::before {
 }
 
 .card-socmed .card-body {
-    background-color: rgba(247, 249, 251, 0.25);
+    background-color: rgba(33, 37, 41, 0.10);
     padding-bottom: 0;
 }
 
 .card-socmed .whatsapp .card-body:hover {
-    background-color: var(--tritary);
+    background-color: var(--tritary-sub);
 }
 
 .card-socmed .location .card-body:hover {
-    background-color: var(--secondary);
+    background-color: var(--secondary-sub);
 }
 
 .card-socmed .instagram .card-body:hover {
-    background-color: var(--four);
+    background-color: var(--four-sub);
 }
 
 .card-socmed svg .cls-1 , .card-socmed svg  .cls-2{
@@ -492,8 +494,8 @@ body::before {
     margin-top: 20vh;
 }
 
-.card-privacy-policy {
-    background-color: rgba(247, 249, 251, 0.25);
+.card-privacy-policy .card {
+    background-color:  rgba(33, 37, 41, 0.10);
 
     padding: 2rem;
 
@@ -507,7 +509,9 @@ body::before {
     margin-bottom: 0;
 }
 
-
+.card-privacy-policy .card {
+    max-width: 75vh;
+}
 
 
 

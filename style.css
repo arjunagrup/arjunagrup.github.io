@@ -27,7 +27,8 @@ body {
     /*
     min-height: 100%;
     */
-    background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 /*
@@ -58,7 +59,8 @@ body::before {
 .navbar-top {
     padding: 1rem;
 
-    background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .navbar-top .navbar-brand {
