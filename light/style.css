@@ -27,7 +27,8 @@ body {
     /*
     min-height: 100%;
     */
-    background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 /*
@@ -53,12 +54,12 @@ body::before {
     margin-right: 6rem !important;
 }
 
-
 /*TNavbar Top - Margin Top*/
 .navbar-top {
     padding: 1rem;
 
-    background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .navbar-top .navbar-brand {
@@ -86,13 +87,13 @@ body::before {
 .navbar-top .collapse .btn-light {
     margin-top: -0.21rem;
     font-weight: 500;
-    color: var(--light);
+    color: var(--dark);
     background-color: transparent;
 }
 
 .navbar-top .collapse .btn-light:hover {
-    color: var(--dark);
-    background-color: var(--light);
+    color: var(--light);
+    background-color: var(--dark);
 }
 
 
@@ -241,28 +242,28 @@ body::before {
 }
 
 .footer svg .cls-1 {
-    fill: var(--light-sub);
+    fill: var(--dark-sub);
 }
 
 .footer a:hover svg .cls-1{
-    fill: var(--light);
+    fill: var(--dark);
 }
 
 .footer svg .cls-2 {
-    fill: var(--light-sub);
+    fill: var(--dark-sub);
 }
 
 .footer a:hover svg .cls-2{
-    fill: var(--light);
+    fill: var(--dark);
 }
 
 .footer p {
     font-size: 1rem;
-    color: var(--light-sub);
+    color: var(--dark-sub);
 }
 
 .footer a {
-    color: var(--dark);
+    color: var(--light);
 }
 
 
@@ -293,14 +294,14 @@ body::before {
     border-width: 0.1rem !important;
     border-radius: 0.25rem;
     border: solid;
-    border-color: var(--light);
+    border-color: var(--dark);
 
     -webkit-border-radius: 0.25rem;
     -moz-border-radius: 0.25rem;
     -ms-border-radius: 0.25rem;
     -o-border-radius: 0.25rem;
 
-    color: var(--light);
+    color: var(--dark);
 }
 
 .card-layanan h2 a {
@@ -317,7 +318,7 @@ body::before {
 }
 
 .card-layanan svg .cls-2{
-    fill: var(--light);
+    fill: var(--dark);
 }
 
 .card-layanan svg {
@@ -343,12 +344,12 @@ body::before {
 }
 
 .card-motor .card {
-    background-color: rgba(247, 249, 251, 0.25);
+    background-color: rgba(33, 37, 41, 0.10);
 
     border-width: 0.1rem !important;
     border-radius: 0.25rem;
     border: solid;
-    border-color: var(--light);
+    border-color: var(--dark);
 
     margin: 2rem 1rem 2rem 1rem;
 }
@@ -381,8 +382,8 @@ body::before {
 }
 
 .card-motor .list-group .list-group-item {
-    border-color: var(--light-sub);
-    color: var(--light);
+    border-color: var(--dark-sub);
+    color: var(--dark);
     font-weight: 200;
     font-size: medium;
     text-align: center;
@@ -410,7 +411,7 @@ body::before {
     border-width: 0.1rem !important;
     border-radius: 0.25rem;
     border: solid;
-    border-color: var(--light);
+    border-color: var(--dark);
     margin: 1rem 0.2rem 1rem 0.2rem;
 }
 
@@ -481,8 +482,9 @@ body::before {
 }
 
 .card-socmed svg .cls-1 , .card-socmed svg  .cls-2{
-    fill: var(--light);
+    fill: var(--dark);
 }
+
 
 
 /*---------------------Privacy Policy---------------------*/
@@ -490,7 +492,7 @@ body::before {
     margin-top: 20vh;
 }
 
-.card-privacy-policy .card {
+.card-privacy-policy {
     background-color: rgba(247, 249, 251, 0.25);
 
     padding: 2rem;
@@ -498,15 +500,11 @@ body::before {
     border-width: 0.1rem !important;
     border-radius: 0.25rem;
     border: solid;
-    border-color: var(--light);
+    border-color: var(--dark);
 }
 
 .card-privacy-policy p {
     margin-bottom: 0;
-}
-
-.card-privacy-policy .card {
-    max-width: 75vh;
 }
 
 
