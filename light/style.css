@@ -315,8 +315,10 @@ body::before {
     color: var(--primary) !important;
 }
 
-.card-layanan p {
-    font-weight: 200;
+.card-motor p {
+    font-size: large;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
 }
 
 .card-layanan svg .cls-2{
@@ -678,4 +680,11 @@ body::before {
     -ms-transform: translateY(0px) !important;
     -o-transform: translateY(0px) !important;
     opacity: 1 !important;
+}
+
+
+
+/*Isi Konten*/
+.text-syarat p a {
+    color: var(--primary) !important    ;
 }

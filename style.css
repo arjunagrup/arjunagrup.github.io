@@ -375,7 +375,8 @@ body::before {
 }
 
 .card-motor p {
-    font-size: large;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
 }
 
 .card-motor .btn-primary {
@@ -393,6 +394,27 @@ body::before {
 .card-motor .text-center a {
     color: var(--primary) !important;
 }
+
+.card-motor .kos .col-md-8 {
+    padding-left: 0;
+}
+
+.card-motor .kos .col-md-4 {
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+}
+
+.card-motor .homestay .col-md-8 {
+    padding-right: 0;
+}
+
+.card-motor .homestay .col-md-4 {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
 
 
 /*Text Syarat*/
@@ -414,6 +436,11 @@ body::before {
     border: solid;
     border-color: var(--light);
     margin: 1rem 0.2rem 1rem 0.2rem;
+}
+
+.text-syarat .ktp {
+    border-color: var(--primary);
+    color: var(--primary);
 }
 
 
@@ -447,9 +474,13 @@ body::before {
 
 /*-----------------------Contact-----------------------*/
 .card-socmed {
-    margin-top: 25vh;
+    margin-top: 20vh;
     margin-bottom: 20vh;
     padding: 0;
+}
+
+.card-socmed .card-body p {
+    font-size: 1rem;
 }
 
 .card-socmed h5 {
@@ -461,17 +492,23 @@ body::before {
     margin: 0;
 }
 
-.card-socmed a {
+.card-socmed .location, .card-socmed .instagram, .card-socmed .tiktok, .card-socmed .whatsapp {
     text-decoration: none;
 }
 
 .card-socmed .card-body {
     background-color: rgba(247, 249, 251, 0.25);
     padding-bottom: 0;
+    font-weight: 300;
+    font-size: 1rem;
 }
 
-.card-socmed .whatsapp .card-body:hover {
-    background-color: var(--tritary);
+.card-socmed .card-body .list-group-item {
+    color: var(--light);
+    border-color: var(--light);
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
 }
 
 .card-socmed .location .card-body:hover {
@@ -480,6 +517,27 @@ body::before {
 
 .card-socmed .instagram .card-body:hover {
     background-color: var(--four);
+}
+
+.card-socmed .whatsapp .card-body:hover {
+    background-color: var(--tritary);
+}
+
+.card-socmed .whatsapp .no1, .card-socmed .whatsapp .no2, .card-socmed .whatsapp .no3 {
+    text-decoration: none;
+    border-width: 0;
+}
+
+.card-socmed .whatsapp .no1:hover, .card-socmed .whatsapp .no2:hover, .card-socmed .whatsapp .no3:hover {
+    background-color: var(--tritary-sub);
+}
+
+.card-socmed .tiktok .card-body:hover {
+    background-color: var(--dark);
+}
+
+.card-socmed svg {
+    margin-bottom: 0.5rem;
 }
 
 .card-socmed svg .cls-1 , .card-socmed svg  .cls-2{
@@ -505,6 +563,7 @@ body::before {
 
 .card-privacy-policy p {
     margin-bottom: 0;
+    text-align: justify;
 }
 
 .card-privacy-policy .card {
@@ -545,6 +604,12 @@ body::before {
         margin-top: 5rem;
         margin-bottom: 0rem;
     }
+    
+    /*Card Socmed*/
+    .card-socmed {
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
 }
 
 
@@ -567,6 +632,12 @@ body::before {
         width: 0px;
     }
     */
+    
+    /*Card Socmed*/
+    .card-socmed {
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
 }
 
 
@@ -678,4 +749,23 @@ body::before {
     -ms-transform: translateY(0px) !important;
     -o-transform: translateY(0px) !important;
     opacity: 1 !important;
+}
+
+
+/*Isi Konten*/
+.text-syarat p a {
+    color: var(--primary) !important;
+
+    /*
+    border-width: 0.1rem;
+    border-color: var(--light);
+    border-style: solid;
+    padding: .5rem;
+    background-color: rgba(247, 249, 251, 0.25);
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+    */
 }
