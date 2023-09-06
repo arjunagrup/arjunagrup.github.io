@@ -396,6 +396,8 @@ body::before {
 }
 
 .card-motor .kos .col-md-8 {
+    display: flex;
+    align-items: center;
     padding-left: 0;
 }
 
@@ -406,6 +408,8 @@ body::before {
 }
 
 .card-motor .homestay .col-md-8 {
+    display: flex;
+    align-items: center;
     padding-right: 0;
 }
 
@@ -415,6 +419,9 @@ body::before {
     padding-left: 0;
 }
 
+.card-motor .property {
+    padding: 0 !important;
+}
 
 
 /*Text Syarat*/
@@ -610,6 +617,28 @@ body::before {
         margin-top: 10vh;
         margin-bottom: 5vh;
     }
+
+    
+    .card-motor .kos .col-md-8 {
+        padding: 1rem;
+    }
+
+    .card-motor .kos .col-md-4 {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .card-motor .homestay .col-md-8 {
+        padding: 1rem;
+    }
+
+    .card-motor .homestay .col-md-4 {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+
 }
 
 
